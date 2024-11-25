@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <!-- Link para a estilização -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- Link para icones em destaque -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- cabeçalho -->
+    <header>
+        <div class="photo">
+            <label for="image-profissional"></label><img src="./assets/images/Foto empresarial.jpg" alt="Foto empresarial" id="commercial photo">
+        </div>
+
+        <div class="developer">
+            <label for="apresentation"></label><p id="apresentation">Olá, meu nome é Gustavo</p>
+            <p id="profissional">Desenvolvedor Front-end</p>
+        </div>
+    </header>
+
+    <!-- Navegação de pontos importantes dá página -->
+     <nav class="navegation">
+        <ul>
+            <li id="home"><a href="#home">Página principal</a></li>
+
+            <li id="about-me"><a href="#about-me">Sobre Mim</a></li>
+
+            <li id="projects"><a href="#projects">Projetos</a></li>
+
+            <li id="contact"><a href="#contact">Contate-me</a></li>
+        </ul>
+     </nav>
+
+     <!-- Corpo principal -->
+      <main>
+        <!-- Seção sobre minha pessoa -->
+        <section class="body-text" id="about-me">
+            <div class="text">
+                <h2 class="title">Sobre Mim</h2>
+                <p role="text">
+                Sou estudante de Sistemas de Informação na Universidade Federal do Acre, com foco no desenvolvimento front-end. Possuo habilidades em HTML, CSS e JavaScript, e estou constantemente ampliando meus conhecimentos e explorando novas tecnologias para me destacar na área. <br><br>
+
+                Atualmente, estou desenvolvendo projetos práticos para demonstrar minhas habilidades, adquirir experiência e criar um portfólio sólido que reflita meu compromisso com a excelência e minha paixão por tecnologia. Meu objetivo é entrar no mercado de trabalho e contribuir com soluções criativas e eficientes, sempre buscando aprendizado e crescimento profissional.
+                </p>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="container-projects">
+                <div class="project-div">
+                    <a href="https://gustatuga.github.io/Documenta-o-JavaScript/">
+                    <figure>
+                        <img src="assets/images/Captura de tela 2024-10-23 105256.png" alt="Imagem do projeto de documentação de JavaScript para fixar os conhecimentos obtidos" class="image-project">
+                    </figure>
+                    </a>
+                    <h2>Documentação JavaScript</h2>
+
+                    <div class="partition"></div>
+
+                    <p class="text-project">
+                        Documentação JavaScript para fixação de conhecimentos
+                    </p>
+
+                    <!-- Technologies programming -->
+                    <div class="container-technologies">
+                        <div class="technologies">
+                            <i class="fab fa-html5" style="font-size: 50px; color: orange;" id="icones" title="HTML5"></i>
+                            <i class="fab fa-css3-alt" style="font-size: 50px; color: blue;" title="CSS3"></i>
+                            <i class="fab fa-js" style="font-size: 50px; color: #f7df1e;" title="JavaScript"></i>
+                        </div>
+
+                        <!-- Repositório do site no GitHub -->
+                         <div class="github">
+                            <a href="https://github.com/GustaTuga/Documenta-o-JavaScript" class="github" target="_blank"><i class="fab fa-github" style="font-size: 50px; color: black;" title="GitHub (Acesse aqui o Repositório)" ></i></a>
+                         </div>
+                    </div>
+                </div>
+                <div class="project-div">
+                    ola mundo moderno
+                </div>
+            </div>
+        </section>
+        <br><br>
+      </main>
+</body>
+</html>
