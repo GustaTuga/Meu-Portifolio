@@ -23,7 +23,7 @@
     </header>
 
     <!-- Navegação de pontos importantes dá página -->
-     <nav class="navegation">
+    <nav class="navegation">
         <ul>
             <li id="home"><a href="#home">Página principal</a></li>
 
@@ -33,15 +33,15 @@
 
             <li id="contact"><a href="#contact">Contate-me</a></li>
         </ul>
-     </nav>
+    </nav>
 
      <!-- Corpo principal -->
-      <main>
+    <main>
         <!-- Seção sobre minha pessoa -->
         <section class="body-text" id="about-me">
             <div class="text">
                 <h2 class="title">Sobre Mim</h2>
-                <p role="text">
+                <p role="text" class="text">
                 Sou estudante de Sistemas de Informação na Universidade Federal do Acre, com foco no desenvolvimento front-end. Possuo habilidades em HTML, CSS e JavaScript, e estou constantemente ampliando meus conhecimentos e explorando novas tecnologias para me destacar na área. <br><br>
 
                 Atualmente, estou desenvolvendo projetos práticos para demonstrar minhas habilidades, adquirir experiência e criar um portfólio sólido que reflita meu compromisso com a excelência e minha paixão por tecnologia. Meu objetivo é entrar no mercado de trabalho e contribuir com soluções criativas e eficientes, sempre buscando aprendizado e crescimento profissional.
@@ -50,19 +50,51 @@
         </section>
 
         <section class="projects" id="projects">
+
             <div class="container-projects">
                 <div class="project-div">
-                    <a href="https://gustatuga.github.io/Documenta-o-JavaScript/">
-                    <figure>
-                        <img src="assets/images/Captura de tela 2024-10-23 105256.png" alt="Imagem do projeto de documentação de JavaScript para fixar os conhecimentos obtidos" class="image-project">
-                    </figure>
+                    <a href="https://piano-virtual.pages.dev/">
+                        <figure>
+                            <img src="assets/images/Piano Virtual.png" alt="Piano Virtual" class="image-project">
+                        </figure>
                     </a>
+
+                    <h2>Piano Virtual</h2>
+
+                    <div class="partition"></div>
+
+                    <p class="text-project">
+                        Piano Virtual usando teclados do computador.
+                    </p>
+
+                    <!-- Technologies programming -->
+                    <div class="container-technologies">
+                        <div class="technologies">
+                            <i class="fab fa-html5" style="font-size: 50px; color: orange;" id="icones" title="HTML5"></i>
+                            <i class="fab fa-css3-alt" style="font-size: 50px; color: blue;" title="CSS3"></i>
+                            <i class="fab fa-js" style="font-size: 50px; color: #f7df1e;" title="JavaScript"></i>
+                        </div>
+
+                        <!-- Repositório do site no GitHub -->
+                         <div class="github">
+                            <a href="https://github.com/GustaTuga/Piano" class="github" target="_blank"><i class="fab fa-github" style="font-size: 50px; color: black;" title="GitHub (Acesse aqui o Repositório)" ></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-div">
+                    <a href="https://documentacao-javascript.pages.dev/" target="_blank">
+                        <figure>
+                            <img src="assets/images/Captura de tela 2024-10-23 105256.png" alt="Imagem do projeto de documentação de JavaScript para fixar os conhecimentos obtidos" class="image-project" title="Site para documentação JavaScript (clique aqui para entrar)">
+                        </figure>
+                    </a>
+
                     <h2>Documentação JavaScript</h2>
 
                     <div class="partition"></div>
 
                     <p class="text-project">
-                        Documentação JavaScript para fixação de conhecimentos
+                        Documentação JavaScript para fixação de conhecimentos.
                     </p>
 
                     <!-- Technologies programming -->
@@ -76,15 +108,74 @@
                         <!-- Repositório do site no GitHub -->
                          <div class="github">
                             <a href="https://github.com/GustaTuga/Documenta-o-JavaScript" class="github" target="_blank"><i class="fab fa-github" style="font-size: 50px; color: black;" title="GitHub (Acesse aqui o Repositório)" ></i></a>
-                         </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="project-div">
-                    ola mundo moderno
+                    <a href="https://detona-ralph.pages.dev/">
+                        <figure>
+                            <img src="assets/images/Jogo_detona_ralph.png" alt="Jogo do detona ralph com uma criação simples" class="image-project">
+                        </figure>
+                    </a>
+
+                    <h2>Jogo Detona Ralph</h2>
+
+                    <div class="partition"></div>
+
+                    <p class="text-project">
+                        Jogo simples inspirado no famoso jogo Detona Ralph.
+                    </p>
+
+                    <!-- Technologies programming -->
+                    <div class="container-technologies">
+                        <div class="technologies">
+                            <i class="fab fa-html5" style="font-size: 50px; color: orange;" id="icones" title="HTML5"></i>
+                            <i class="fab fa-css3-alt" style="font-size: 50px; color: blue;" title="CSS3"></i>
+                            <i class="fab fa-js" style="font-size: 50px; color: #f7df1e;" title="JavaScript"></i>
+                        </div>
+
+                        <!-- Repositório do site no GitHub -->
+                         <div class="github">
+                            <a href="https://github.com/GustaTuga/Detona-Ralph" class="github" target="_blank"><i class="fab fa-github" style="font-size: 50px; color: black;" title="GitHub (Acesse aqui o Repositório)" ></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-div">
+                    <a href="https://jogo-da-memoria.pages.dev/">
+                        <figure>
+                            <img src="assets/images/jogo-da-memoria.png" alt="jogo da memória" class="image-project" title="Jogo da memória simples com emojig">
+                        </figure>
+                    </a>
+
+                    <h2>Jogo da Memória</h2>
+
+                    <div class="partition"></div>
+
+                    <p class="text-project">
+                        Jogo da memória com emojis.
+                    </p>
+
+                    <!-- Technologies programming -->
+                    <div class="container-technologies">
+                        <div class="technologies">
+                            <i class="fab fa-html5" style="font-size: 50px; color: orange;" id="icones" title="HTML5"></i>
+                            <i class="fab fa-css3-alt" style="font-size: 50px; color: blue;" title="CSS3"></i>
+                            <i class="fab fa-js" style="font-size: 50px; color: #f7df1e;" title="JavaScript"></i>
+                        </div>
+
+                        <!-- Repositório do site no GitHub -->
+                         <div class="github">
+                            <a href="https://github.com/GustaTuga/Jogo-da-mem-ria" class="github" target="_blank"><i class="fab fa-github" style="font-size: 50px; color: black;" title="GitHub (Acesse aqui o Repositório)" ></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
         <br><br>
-      </main>
+
+    </main>
 </body>
 </html>
