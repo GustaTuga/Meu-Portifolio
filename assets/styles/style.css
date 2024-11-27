@@ -7,6 +7,8 @@
     --background-color-header: #000;
     --background-color-primary: #e3e3e3;
     --background-color-secundary: #434343;
+    --background-color-main: #f4f4f4;
+    --background-color-footer: #333;
     --font-color: #ffffff;
     --font-color-contrast: #434343;
 }
@@ -46,6 +48,16 @@ header img {
     color: white;
 }
 
+#linkedin, #github {
+    display: inline-block;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+#linkedin:hover, #github:hover {
+    transform: scale(1.3);
+}
+
 #profissional {
     margin-top: 15px;
     font-weight: 100;
@@ -69,13 +81,13 @@ ul {
     border: none;
 }
 
-a:not(.github a) {
+a:not(.github, .icones-header) {
     color: var(--font-color-contrast);
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
-a:hover:not(.github a) {
+a:hover:not(.github, .icones-header) {
     padding: 10px;
     color: var(--font-color);
     transition: all 0.3s ease;
@@ -93,6 +105,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--background-color-main);
 }
 
 .title {
@@ -177,6 +190,16 @@ main {
 .fa-github {
     cursor: pointer;
 }
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--background-color-footer);
+    font-size: 14px;
+    color: var(--font-color);
+}
+
 
 @media (max-width: 1500px) {
     .project-div {

@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <!-- Link para icones em destaque -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Link para icone do Linkedin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
     <!-- cabeçalho -->
@@ -17,8 +20,20 @@
         </div>
 
         <div class="developer">
-            <label for="apresentation"></label><p id="apresentation">Olá, meu nome é Gustavo</p>
+            <p id="apresentation">Olá, meu nome é Gustavo</p>
             <p id="profissional">Desenvolvedor Front-end</p>
+
+            <!-- Icones de contato -->
+                <!-- Linkedin -->
+                <a href="https://www.linkedin.com/in/gustavo-bezerra-450569289/" target="_blank" id="linkedin" class="icones-header">
+                <i class="fab fa-linkedin"></i>
+                </a>
+                
+                <!-- Github -->
+                <a href="https://github.com/GustaTuga" target="_blank" class="github" id="github">
+                    <i class="fab fa-github"></i>
+                </a>                
+            
         </div>
     </header>
 
@@ -31,7 +46,6 @@
 
             <li id="projects"><a href="#projects">Projetos</a></li>
 
-            <li id="contact"><a href="#contact">Contate-me</a></li>
         </ul>
     </nav>
 
@@ -49,13 +63,13 @@
             </div>
         </section>
 
-        <section class="projects" id="projects">
+        <section class="projects">
 
-            <div class="container-projects">
+            <div class="container-projects" id="projects">
                 <div class="project-div">
-                    <a href="https://piano-virtual.pages.dev/">
+                    <a href="https://piano-virtual.pages.dev/" target="_blank">
                         <figure>
-                            <img src="assets/images/Piano Virtual.png" alt="Piano Virtual" class="image-project">
+                            <img src="assets/images/Piano Virtual.png" alt="Piano Virtual" class="image-project" title="Site para o Piano Virtual">
                         </figure>
                     </a>
 
@@ -113,9 +127,9 @@
                 </div>
 
                 <div class="project-div">
-                    <a href="https://detona-ralph.pages.dev/">
+                    <a href="https://detona-ralph.pages.dev/" target="_blank">
                         <figure>
-                            <img src="assets/images/Jogo_detona_ralph.png" alt="Jogo do detona ralph com uma criação simples" class="image-project">
+                            <img src="assets/images/Jogo_detona_ralph.png" alt="Jogo do detona ralph com uma criação simples" class="image-project" title="Site para o jogo do Detona-Ralph">
                         </figure>
                     </a>
 
@@ -143,9 +157,9 @@
                 </div>
 
                 <div class="project-div">
-                    <a href="https://jogo-da-memoria.pages.dev/">
+                    <a href="https://jogo-da-memoria.pages.dev/" target="_blank">
                         <figure>
-                            <img src="assets/images/jogo-da-memoria.png" alt="jogo da memória" class="image-project" title="Jogo da memória simples com emojig">
+                            <img src="assets/images/jogo-da-memoria.png" alt="jogo da memória" class="image-project" title="Jogo da memória simples com emoji" title="Site para o jogo da memória">
                         </figure>
                     </a>
 
@@ -176,6 +190,9 @@
 
         <br><br>
 
+        <footer>
+            <p>© 2024 Gustavo Bezerra. Todos os direitos reservados.</p>
+        </footer>
     </main>
 </body>
 </html>
