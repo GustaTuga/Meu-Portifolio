@@ -129,6 +129,7 @@ main {
 
 /* Estilização dos projetos em amostra */
 .container-projects {
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,14 +137,10 @@ main {
     gap: 10px;
     margin-top: 25px;
 }
-
-.container-projects:last-child {
-    justify-content: left;
-}
 /* Estilização da div */
 
 .projects {
-    width: 90%;
+    width: 95%;
     justify-content: center;
 }
 .project-div {
