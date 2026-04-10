@@ -46,8 +46,6 @@ header img {
 
 .developer {
     margin-left: 5%;
-    font-weight: 600;
-    font-size: 40px;
     color: white;
 }
 
@@ -76,21 +74,21 @@ nav {
     background-color: var(--background-color-primary);
 }
 
-ul {
+nav ul {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     list-style: none;
     margin: 0;
     border: none;
 }
 
-a:not(.github, .icones-header) {
+nav ul li a{
     color: var(--font-color-contrast);
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
-a:hover:not(.github, .icones-header) {
+nav ul li a:hover {
     padding: 10px;
     color: var(--font-color);
     transition: all 0.3s ease;
@@ -98,8 +96,13 @@ a:hover:not(.github, .icones-header) {
     border-radius: 10px;
 }
 
-li {
+nav ul li {
     transition: all 0.3s ease;
+}
+
+#menu-toggle {
+    display: none;
+    align-self: flex-start;
 }
 
 /* Estilização do corpo principal */
@@ -125,6 +128,7 @@ main {
 
 .text {
     margin: 20px;
+    text-decoration: none;
 }
 
 /* Estilização dos projetos em amostra */
@@ -140,8 +144,10 @@ main {
 /* Estilização da div */
 
 .projects {
-    width: 95%;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    flex: 1;
 }
 .project-div {
     width: 490px;
@@ -192,14 +198,26 @@ main {
     cursor: pointer;
 }
 
+#skills li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
 footer {
     width: 100%;
     text-align: center;
+    align-items: center;
     padding: 10px;
     background-color: var(--background-color-footer);
     font-size: 14px;
     color: var(--font-color);
 }
+
+.contact-badge {
+    text-decoration: none;
+    transition: none;
+}
+
 
 
 @media (max-width: 1500px) {
@@ -226,7 +244,7 @@ footer {
 }
 @media (max-width: 1040px) {
     .project-div {
-        width: 500px;
+        width: 90%;
         height: auto;
     }
     .image-project {
@@ -262,9 +280,42 @@ footer {
     }
 }
 @media (max-width: 685px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Esconde o menu por padrão */
+    #menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Mostra quando ativado */
+    #menu.active {
+        display: flex;
+    }
+
+    /* Botão hambúrguer */
+    #menu-toggle {
+        display: block;
+        font-size: 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
     #apresentation, #profissional {
         font-size: 20px;
     }
+
     header img {
         max-width: 200px;
         border-radius: 50%;
