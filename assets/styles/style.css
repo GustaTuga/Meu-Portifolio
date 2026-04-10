@@ -40,6 +40,7 @@ header img {
     border-radius: 50%;
 }
 
+
 .photo {
     margin-left: 10%;
 }
@@ -50,12 +51,14 @@ header img {
 }
 
 #linkedin, #github {
+    font-size: 40px;
     display: inline-block;
     color: #ffffff;
     transition: all 0.3s ease;
 }
 
 #linkedin:hover, #github:hover {
+    margin: 10px;
     transform: scale(1.3);
 }
 
