@@ -221,7 +221,30 @@ footer {
     transition: none;
 }
 
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 
+    padding: 12px 16px;
+    font-size: 20px;
+
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+/* quando aparecer */
+#back-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+}
 
 @media (max-width: 1500px) {
     .project-div {
@@ -290,17 +313,22 @@ footer {
 
     /* Esconde o menu por padrão */
     #menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* opcional: alinha à esquerda */
+    gap: 10px;
+    transform: translateY(-10px);
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
     }
 
-    /* Mostra quando ativado */
     #menu.active {
-        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+        max-height: 300px;
     }
-
     /* Botão hambúrguer */
     #menu-toggle {
         display: block;
